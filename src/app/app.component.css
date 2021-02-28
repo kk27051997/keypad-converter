@@ -1,0 +1,36 @@
+.screen{
+    height: 329px;
+    width: 190px;
+    padding: 2px 10px 2px 10px;
+    background-color: gray;
+    
+}
+
+.great{
+    height:65px;
+    width:60px ;
+    padding-top: 20px ;
+    padding-bottom:20px;
+    text-align: center ;
+    background-color:lightgray;
+    margin-left:5px;
+    margin-top:5px;
+    
+  }
+  #integer{
+      width:181.5px;
+  }
+  #text{
+    width:181.5px;
+  }
+
+    #one,#four,#seven,#hash{
+        height:65px;
+        width:60px ;
+        padding-top: 20px ;
+        padding-bottom:20px;
+        text-align: center ;
+        background-color:lightgray;
+        margin-top:5px;
+    }
+   
