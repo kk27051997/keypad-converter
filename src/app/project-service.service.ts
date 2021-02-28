@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProjectServiceService {
-
+//value storage
   constructor() { }
   storedetails : string[]= [];
   values={
@@ -35,7 +35,7 @@ export class ProjectServiceService {
   24:'Y',
   25:'Z'
   };
-
+//get inputs from keyboard
   getdetails(inputValue:string){
     this.storedetails=[];
     var match = inputValue.split('#');
@@ -47,7 +47,7 @@ export class ProjectServiceService {
     else{ 
 
    for(let i=0;i<match.length;i++){
-   let  calculated_value = parseInt(match[i], 10)%26;
+   let  calculated_value = parseInt(match[i], 10)%26;//get remainder to convert them to exact value in storage
    if(isNaN(calculated_value)){
      return '0';
    }
@@ -136,17 +136,17 @@ export class ProjectServiceService {
       match[i]=this.values[26];
      }
     this.storedetails.push(match[i]);
-   }//inner else
-  }//for loop
-     
+   }
+  }
+     //return the converted string back to ts
   return this.storedetails.toString(); 
-  }//outer else
+  }
 
-  }//function end
-
-
+  }
 
 
 
 
-}//export end
+
+
+}

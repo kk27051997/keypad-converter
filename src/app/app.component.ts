@@ -13,7 +13,7 @@ export class AppComponent  {
   converter:String='Text'; 
 
 
-  //controls of keyboard keys
+  //controls of buttons
   setdata(data:string){
   var inputValue = (<HTMLInputElement>document.getElementById('integer')).value;
   this.setvalue=inputValue.concat(data)
@@ -24,7 +24,7 @@ export class AppComponent  {
       this.converter=converter_values;
 }
     } 
-
+//code for backspace
     deletedate(){
     var inputValue = (<HTMLInputElement>document.getElementById('integer')).value;
     var updatedstring = inputValue.slice(0, -1);
