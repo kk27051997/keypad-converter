@@ -36,7 +36,9 @@ export class ProjectServiceService {
   25:'Z'
   };
 //get inputs from keyboard
+
   getdetails(inputValue:string){
+    try{//Exception block to handle unknown exception
     this.storedetails=[];
     var match = inputValue.split('#');
     let convert_number = parseInt(inputValue, 10);
@@ -141,8 +143,15 @@ export class ProjectServiceService {
      //return the converted string back to ts
   return this.storedetails.toString(); 
   }
+    }
+    catch ( error ) {
+      alert("Unknown Error has  occured in service" );
+   }
 
   }
+
+
+
 
 
 
