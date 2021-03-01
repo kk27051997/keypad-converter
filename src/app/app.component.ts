@@ -29,7 +29,7 @@ export class AppComponent  {
     var inputValue = (<HTMLInputElement>document.getElementById('integer')).value;
     var updatedstring = inputValue.slice(0, -1);
     this.setvalue=updatedstring;
-    console.log(updatedstring);
+    console.log("You typed backspace");
     if(!updatedstring){
       this.converter='';
       
